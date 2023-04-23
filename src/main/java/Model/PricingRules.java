@@ -27,7 +27,7 @@ public class PricingRules {
         }
     }
 
-    public Item getItem(String sku) {
-        return items.get(sku);
+    public Item getItem(String name) {
+        return items.get(name);
     }
 }

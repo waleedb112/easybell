@@ -12,7 +12,7 @@ public class Checkout {
         this.items = new ArrayList<>();
     }
 
-    public void scan(String name) {
+    public void scan(String name) throws Exception {
         Item item = pricingRules.getItem(name);
 
         if (item != null) {
@@ -20,6 +20,8 @@ public class Checkout {
             if (!items.contains(item)) {
                 items.add(item);
             }
+        } else {
+            throw new Exception("Object " + name + " not found");
         }
     }
 

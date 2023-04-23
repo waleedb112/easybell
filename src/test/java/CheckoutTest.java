@@ -19,7 +19,7 @@ class CheckoutTest {
     }
 
     @Test
-    void testScan() {
+    void testScan() throws Exception {
         // Scan some items
         checkout.scan("A");
         checkout.scan("B");
@@ -36,7 +36,7 @@ class CheckoutTest {
     }
 
     @Test
-    void testGetTotal() {
+    void testGetTotal() throws Exception {
         // Scan some items
         checkout.scan("A");
         checkout.scan("B");

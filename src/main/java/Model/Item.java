@@ -1,11 +1,16 @@
 package Model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * The Item class represents a product item that can be added to a shopping cart.
  * It contains information about the item's name, regular price per unit, special price per unit (if a certain
  * quantity is purchased), special quantity at which the special price applies, and the quantity of the item
  * currently in the cart.
  */
+@Getter
+@Setter
 public class Item {
     private final String name; // The name of the item
     private final int unitPrice; // The regular price per unit of the item
@@ -28,15 +33,6 @@ public class Item {
         this.specialPrice = specialPrice;
         this.specialQuantity = specialQuantity;
         this.quantity = 0;
-    }
-
-    /**
-     * Returns the name of the item.
-     *
-     * @return the name of the item
-     */
-    public String getName() {
-        return name;
     }
 
     /**
@@ -65,14 +61,5 @@ public class Item {
      */
     public void addQuantity() {
         this.quantity += 1;
-    }
-
-    /**
-     * Returns the current quantity of the item in the cart.
-     *
-     * @return the current quantity of the item in the cart
-     */
-    public int getQuantity() {
-        return quantity;
     }
 }

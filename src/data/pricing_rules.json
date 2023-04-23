@@ -1,0 +1,22 @@
+{
+  "A": {
+    "unit_price": 50,
+    "special_price": 130,
+    "special_quantity": 3
+  },
+  "B": {
+    "unit_price": 30,
+    "special_price": 45,
+    "special_quantity": 2
+  },
+  "C": {
+    "unit_price": 20,
+    "special_price": 0,
+    "special_quantity": 0
+  },
+  "D": {
+    "unit_price": 15,
+    "special_price": 0,
+    "special_quantity": 0
+  }
+}
